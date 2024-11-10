@@ -1,13 +1,15 @@
-[build]
-  # Set the build command for Next.js
-  command = "npm i -f && npm run build"
-  # Define the output directory for Next.js static export
-  publish = ".next" # Use "out" if you are using `next export` for static sites
+#[build]
+#  # Set the build command for Next.js
+#  command = "npm run build"
+#  # Define the output directory for Next.js static export
+#  publish = ".next" # Use "out" if you are using `next export` for static sites
 
 # Optional: Specify Node version if needed
 #[build.environment]
 #  NODE_VERSION = "20.x" # Specify your preferred Node.js version
 
-# Optional: Custom install command
-[build.lifecycle]
-  onPreBuild = "npm install -f"
+# Optional: Custom install command 
+# Not working
+#[build.lifecycle]
+#  onPreBuild = "npm install -f"
+
