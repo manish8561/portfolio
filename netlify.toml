@@ -1,6 +1,6 @@
 [build]
   # Set the build command for Next.js
-  command = "npm run build"
+  command = "npm i -f && npm run build"
   # Define the output directory for Next.js static export
   publish = ".next" # Use "out" if you are using `next export` for static sites
 
