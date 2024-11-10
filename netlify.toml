@@ -1,6 +1,4 @@
 [build]
-  # Specify the Node version to use
-  environment = { NODE_VERSION = "20.16.x" } # or your desired Node version
   # Set the build command for Next.js
   command = "npm run build"
   # Define the output directory for Next.js static export
