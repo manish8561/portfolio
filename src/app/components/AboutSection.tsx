@@ -9,12 +9,12 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Golang</li>
         <li>Blockchain</li>
-        <li>Solidity/Smart Contracts</li>
-        <li>Mongodb/DynamoDB</li>
-        <li>Nest JS</li>
-        <li>AWS Lambda</li>
+        <li>Golang/ Node JS</li>
+        <li>Solidity/ Smart Contracts</li>
+        <li>Hardhat/ Web3 / Tronweb</li>
+        <li>Mongodb/ DynamoDB/ MySQL/ PostgreSQL</li>
+        <li>RMQ/ Kafka/ Grpc</li>
         <li>AWS Services</li>
       </ul>
     ),
@@ -26,21 +26,24 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>MCA</li>
         <li>IGNOU, Jaipur</li>
+        <li>BA</li>
+        <li>Rajasthan University, Jaipur</li>
       </ul>
     ),
   },
   {
-    title: "Skills2",
+    title: "Secondary Skills",
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express JS</li>
-        <li>MySQL/PostgreSQL</li>
+        <li>Nest JS/ Express JS</li>
+        <li>Docker</li>
+        <li>Redis</li>
+        <li>Serverless</li>
         <li>Sequelize/ Mongoose</li>
         <li>Typescript/ Javascript</li>
-        <li>ReactJS</li>
-        <li>Angular</li>
+        <li>Redis</li>
+        <li>React/ Angular/ NextJS</li>
       </ul>
     ),
   },
