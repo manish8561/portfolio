@@ -6,7 +6,7 @@
 
 # Optional: Specify Node version if needed
 [build.environment]
-  NODE_VERSION = "20.16.x" # Specify your preferred Node.js version
+  NODE_VERSION = "20.x" # Specify your preferred Node.js version
 
 # Optional: Custom install command
 [build.lifecycle]
