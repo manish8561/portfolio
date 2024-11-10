@@ -14,9 +14,9 @@ export async function POST(req: NextRequest) {
   const { email, subject, message }: SendData = await req.json();
   const emailRequest: CreateEmailOptions = {
     from: fromEmail,
-    to: [fromEmail, email],
+    to: ["manish198646@yahoo.com", email],
     subject: subject,
-    html: `<h1>${subject}</h1>
+    html: `<h1>Portfolio Eamil: ${subject}</h1>
       <p>Thank you for contacting us!</p>
       <p>New message submitted:</p>
       <p>${message}</p>`,

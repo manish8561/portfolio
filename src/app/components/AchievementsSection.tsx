@@ -8,6 +8,12 @@ const AnimatedNumbers = dynamic(
   },
   { ssr: false }
 );
+let views = new Date().getTime() / 1000;
+views /= 86400; // days
+// views /= 7; // weeks
+// views /= 30; // months
+views /= 365; // years
+views = Math.floor(views);
 
 const achievementsList = [
   {
@@ -20,10 +26,10 @@ const achievementsList = [
     metric: "Users",
     value: "100,000",
   },
-  // {
-  //   metric: "Awards",
-  //   value: "7",
-  // },
+  {
+    metric: "Views",
+    value: views.toString(),
+  },
   {
     metric: "Years",
     value: "12",
