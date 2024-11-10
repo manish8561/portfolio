@@ -6,6 +6,16 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
 
+const contactDetails = () => {
+  window.alert(
+    `
+Contact Me: 
+Email: manish198646@yahoo.com 
+Phone: +918561841501
+`
+  );
+};
+
 const HeroSection = () => {
   return (
     <section className="lg:py-16">
@@ -42,12 +52,19 @@ const HeroSection = () => {
             I am Golang| Blockchain| Full Stack Developer.
           </p>
           <div>
-            <Link
+            <button
+              className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500
+hover:bg-slate-200 text-white"
+              onClick={contactDetails}
+            >
+              Hire Me
+            </button>
+            {/* <Link
               href="https://www.linkedin.com/in/manish-sharma-03a95566/"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
             >
               Hire Me
-            </Link>
+            </Link> */}
             <Link
               href="https://www.linkedin.com/in/manish-sharma-03a95566/"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import EmailIcon from "../../../public/email-icon.svg";
+import PhoneIcon from "../../../public/phone-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -90,7 +91,13 @@ const EmailSection = () => {
           <Link href="https://www.linkedin.com/in/manish-sharma-03a95566/">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
-          <Link href="mailto:manish198646@yahoo.com">
+          <Link href="tel:+918561841501" rel="+918561841501">
+            <Image src={PhoneIcon} alt="+918561841501" />
+          </Link>
+          <Link
+            href="mailto:manish198646@yahoo.com"
+            rel="manish198646@yahoo.com"
+          >
             <Image src={EmailIcon} alt="manish198646@yahoo.com" />
           </Link>
         </div>
