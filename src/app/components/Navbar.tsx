@@ -53,13 +53,19 @@ const Navbar = () => {
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink href={link.path} title={link.title} />
+                <NavLink
+                  href={link.path}
+                  title={link.title}
+                  onClick={()=>{}}
+                />
               </li>
             ))}
           </ul>
         </div>
       </div>
-      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      {navbarOpen ? (
+        <MenuOverlay links={navLinks} onClick={() => setNavbarOpen(false)} />
+      ) : null}
     </nav>
   );
 };

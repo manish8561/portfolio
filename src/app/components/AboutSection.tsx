@@ -3,19 +3,66 @@ import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 
+const skillsData = [
+  { name: "Golang" },
+  { name: "Nest JS" },
+  { name: "Microservices" },
+  { name: "Serverless" },
+  { name: "Blockchain" },
+  { name: "Ethereum" },
+  { name: "Solidity" },
+  { name: "Web3/ Tronweb" },
+  { name: "Hardhat" },
+  { name: "Smart Contract" },
+  { name: "Hyperleger Fabric" },
+  { name: "AWS DynamoDB" },
+  { name: "AWS Lambda" },
+  { name: "API Gateway" },
+  { name: "Opensearch" },
+  { name: "Elastic Search" },
+  { name: "Elastic Cache" },
+  { name: "RDS" },
+  { name: "S3" },
+  { name: "EC2" },
+  { name: "Kafka" },
+  { name: "RabbitMQ" },
+  { name: "MongoDB" },
+  { name: "Mongoose" },
+  { name: "Redis" },
+  { name: "GRPC" },
+  { name: "Docker" },
+  { name: "Kubernetes" },
+  { name: "Express JS" },
+  { name: "Electron JS" },
+  { name: "MEAN/MERN Stack" },
+  { name: "MySQL" },
+  { name: "Postgres" },
+  { name: "Sequelize" },
+  { name: "TypeORM" },
+  { name: "TypeORM" },
+  { name: "Socket.io" },
+  { name: "JavaScript" },
+  { name: "React" },
+  { name: "Node.js" },
+  { name: "TypeScript" },
+  { name: "TailwindCSS" },
+  { name: "Angular" },
+  { name: "Firebase" },
+  { name: "Firestore" },
+  { name: "Jest" },
+  { name: "Mocha" },
+  { name: "Chai" },
+];
+
 const TAB_DATA = [
   {
-    title: "Skills",
-    id: "skills",
+    title: "Languages",
+    id: "languages",
     content: (
       <ul className="list-disc pl-2">
-        <li>Blockchain</li>
-        <li>Golang/ Node JS</li>
-        <li>Solidity/ Smart Contracts</li>
-        <li>Hardhat/ Web3 / Tronweb</li>
-        <li>Mongodb/ DynamoDB/ MySQL/ PostgreSQL</li>
-        <li>RMQ/ Kafka/ Grpc</li>
-        <li>AWS Services</li>
+        <li>English</li>
+        <li>Hindi</li>
+        <li>Punjabi</li>
       </ul>
     ),
   },
@@ -31,29 +78,11 @@ const TAB_DATA = [
       </ul>
     ),
   },
-  {
-    title: "Secondary Skills",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Nest JS/ Express JS</li>
-        <li>Docker</li>
-        <li>Redis</li>
-        <li>Serverless</li>
-        <li>Sequelize/ Mongoose</li>
-        <li>Typescript/ Javascript</li>
-        <li>Redis</li>
-        <li>React/ Angular/ NextJS</li>
-      </ul>
-    ),
-  },
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("education");
   const [isPending, startTransition] = useTransition();
-
-  // console.table({ isPending });
 
   const handleTabChange = (id: string) => {
     if (!isPending) {
@@ -64,7 +93,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white" id="about">
+    <section className="text-white mb-10" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
           src="/images/about-image.png"
@@ -89,25 +118,18 @@ const AboutSection = () => {
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              {" "}
-              Skills{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              {" "}
-              Skills{" "}
-            </TabButton>
-            <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
               {" "}
               Education{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("languages")}
+              active={tab === "languages"}
+            >
+              {" "}
+              Languages Known{" "}
             </TabButton>
           </div>
           <div className="mt-8">
@@ -115,6 +137,25 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
+      <section className="bg-[#000] py-10 rounded-lg">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center text-white mb-8">
+            Skills
+          </h2>
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 text-center">
+            {skillsData.map((skill, index) => (
+              <div
+                key={`skill-${index.toString()}`}
+                className="bg-gray-800 p-4 rounded-lg shadow-md hover:bg-gray-700 transition duration-300"
+              >
+                <h3 className="text-sm lg:text-md font-semibold text-white">
+                  {skill.name}
+                </h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </section>
   );
 };

@@ -8,14 +8,15 @@ interface Link {
 
 interface MenuOverlayProps {
   links: Link[];
+  onClick: () => void;
 }
 
-const MenuOverlay: React.FC<MenuOverlayProps> = ({ links }) => {
+const MenuOverlay: React.FC<MenuOverlayProps> = ({ links, onClick }) => {
   return (
     <ul className="flex flex-col py-4 items-center">
       {links.map((link, index) => (
         <li key={index}>
-          <NavLink href={link.path} title={link.title} />
+          <NavLink href={link.path} title={link.title} onClick={onClick} />
         </li>
       ))}
     </ul>
