@@ -4,54 +4,54 @@ import Image from "next/image";
 import TabButton from "./TabButton";
 
 const skillsData = [
-  { name: "Golang" },
-  { name: "Nest JS" },
-  { name: "Microservices" },
-  { name: "Serverless" },
-  { name: "Blockchain" },
-  { name: "Ethereum" },
-  { name: "Solidity" },
-  { name: "Web3/ Tronweb" },
-  { name: "Hardhat" },
-  { name: "Smart Contract" },
-  { name: "Hyperleger Fabric" },
-  { name: "AWS DynamoDB" },
-  { name: "AWS Lambda" },
-  { name: "API Gateway" },
-  { name: "Opensearch" },
-  { name: "Elastic Search" },
-  { name: "Elastic Cache" },
-  { name: "RDS" },
-  { name: "S3" },
-  { name: "EC2" },
-  { name: "Kafka" },
-  { name: "RabbitMQ" },
-  { name: "MongoDB" },
-  { name: "Mongoose" },
-  { name: "Redis" },
-  { name: "GRPC" },
-  { name: "Docker" },
-  { name: "Kubernetes" },
-  { name: "Express JS" },
-  { name: "Electron JS" },
-  { name: "MEAN/MERN Stack" },
-  { name: "MySQL" },
-  { name: "Postgres" },
-  { name: "Sequelize" },
-  { name: "TypeORM" },
-  { name: "TypeORM" },
-  { name: "Socket.io" },
-  { name: "JavaScript" },
-  { name: "React" },
-  { name: "Node.js" },
-  { name: "TypeScript" },
-  { name: "TailwindCSS" },
-  { name: "Angular" },
-  { name: "Firebase" },
-  { name: "Firestore" },
-  { name: "Jest" },
-  { name: "Mocha" },
-  { name: "Chai" },
+  { name: "Golang", level: "Proficient" },
+  { name: "Nest JS", level: "Proficient" },
+  { name: "Microservices", level: "Proficient" },
+  { name: "Serverless", level: "Proficient" },
+  { name: "Blockchain", level: "Proficient" },
+  { name: "Ethereum", level: "Proficient" },
+  { name: "Solidity", level: "Expert" },
+  { name: "Web3/ Tronweb", level: "Expert" },
+  { name: "Hardhat", level: "Expert" },
+  { name: "Smart Contract", level: "Proficient" },
+  { name: "Hyperleger Fabric", level: "Intermediate" },
+  { name: "AWS DynamoDB", level: "Intermediate" },
+  { name: "AWS Lambda", level: "Proficient" },
+  { name: "API Gateway", level: "Expert" },
+  { name: "Opensearch", level: "Expert" },
+  { name: "Elastic Search", level: "Proficient" },
+  { name: "Elastic Cache", level: "Expert" },
+  { name: "RDS", level: "Proficient" },
+  { name: "S3", level: "Expert" },
+  { name: "EC2", level: "Expert" },
+  { name: "Kafka", level: "Intermediate" },
+  { name: "RabbitMQ", level: "Expert" },
+  { name: "MongoDB", level: "Expert" },
+  { name: "Mongoose", level: "Expert" },
+  { name: "Redis", level: "Proficient" },
+  { name: "GRPC", level: "Proficient" },
+  { name: "Docker", level: "Expert" },
+  { name: "Kubernetes", level: "Intermediate" },
+  { name: "Express JS", level: "Expert" },
+  { name: "Electron JS", level: "Proficient" },
+  { name: "MEAN/MERN Stack", level: "Expert" },
+  { name: "MySQL", level: "Expert" },
+  { name: "Postgres", level: "Proficient" },
+  { name: "Sequelize", level: "Proficient" },
+  { name: "TypeORM", level: "Proficient" },
+  { name: "Socket.io", level: "Proficient" },
+  { name: "JavaScript", level: "Expert" },
+  { name: "React", level: "Proficient" },
+  { name: "Node.js", level: "Expert" },
+  { name: "TypeScript", level: "Proficient" },
+  { name: "TailwindCSS", level: "Intermediate" },
+  { name: "Angular", level: "Proficient" },
+  { name: "Firebase", level: "Proficient" },
+  { name: "Firestore", level: "Proficient" },
+  { name: "Jest", level: "Proficient" },
+  { name: "Mocha", level: "Proficient" },
+  { name: "Chai", level: "Intermediate" },
+  { name: "HTML", level: "Expert" },
 ];
 
 const TAB_DATA = [
@@ -137,20 +137,33 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-      <section className="bg-[#000] py-10 rounded-lg">
+      <section>
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center text-white mb-8">
             Skills
           </h2>
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 text-center">
+          <div className="bg-gray-900 p-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {skillsData.map((skill, index) => (
               <div
-                key={`skill-${index.toString()}`}
-                className="bg-gray-800 p-4 rounded-lg shadow-md hover:bg-gray-700 transition duration-300"
+                key={index}
+                className="bg-gray-800 rounded-md p-2 flex flex-col items-center justify-center"
               >
-                <h3 className="text-sm lg:text-md font-semibold text-white">
+                <h3 className="text-white font-bold text-sm mb-1">
                   {skill.name}
                 </h3>
+                <span
+                  className={`px-2 py-1 rounded-full text-xs font-medium ${
+                    skill?.level === "Expert"
+                      ? "bg-green-500 text-white"
+                      : skill.level === "Proficient"
+                      ? "bg-blue-500 text-white"
+                      : skill.level === "Intermediate"
+                      ? "bg-yellow-500 text-white"
+                      : "bg-red-500 text-white"
+                  }`}
+                >
+                  {skill?.level}
+                </span>
               </div>
             ))}
           </div>
