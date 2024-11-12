@@ -30,7 +30,7 @@ Upgrade your international banking with a UK account from Nomo, brought to you b
     description:
       "For over a decade, Ubuy as a leading retail search engine platform has been serving customers in over 180+ countries around the globe.",
     image: "/images/projects/ubuy.jpg",
-    tag: ["All", "Web"],
+    tag: ["All", "Web", "Mobile"],
     gitUrl: "/",
     previewUrl: "https://ubuy.com/",
   },
@@ -56,13 +56,42 @@ Upgrade your international banking with a UK account from Nomo, brought to you b
   },
   {
     id: 6,
-    title: "AnchorSwap",
+    title: "Anchor Swap",
     description:
-      "a Decentralized Exchange and Automatic Liquidity Acquisition Yield Farm running currently on Binance Smart Chain, with a vision to launch on several other blockchains in future. We have created a deflation token, called Anchor.",
+      "Decentralized Exchange and Automatic Liquidity Acquisition Yield Farm running currently on Binance Smart Chain, with a vision to launch on several other blockchains in future. We have created a deflation token, called Anchor.",
     image: "/images/projects/anchor.jpg",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "https://anchorswap.app/",
+  },
+  {
+    id: 7,
+    title: "eTicketSolutions",
+    description:
+      "eTicket Solutions is your one stop shop for all ticketing related. Designed by entrepreneurs with a passion for theatre and the arts, we know how important it is to take time out of your busy schedule to unwind and enjoy life and that’s why we are dedicated to providing you with all of the latest entertainment, travel, and transportation information - from movie releases, to details of the latest happenings in your area and how to get there!",
+    image: "/images/projects/eticketsolutions.jpg",
+    tag: ["All", "Web", "Mobile"],
+    gitUrl: "/",
+    previewUrl: "https://eticketsolutions.com/",
+  },
+  {
+    id: 8,
+    title: "K R Consultancy",
+    description: `Vitalia is clean and modern ecommerce theme. Unlimited colors and font. Seo ready. Resposive design and more...
+    Log to demo admin panel and check all settings and functions. With custom footer you can add some nice info in footer like contact or twitter & facebook.`,
+    image: "/images/projects/krconsultancy.jpg",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "http://www.krconsultancy.in/",
+  },
+  {
+    id: 9,
+    title: "Harpreet Fashion",
+    description: `Discover the latest trends at our fashion store, where style meets sophistication. From timeless classics to contemporary designs, we offer a curated selection for men, women, and kids. Our collection includes everything from chic casual wear to elegant formal attire, crafted with high-quality fabrics and designed to elevate your wardrobe.`,
+    image: "/images/projects/5.png",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "http://www.harpreetfashion.com",
   },
 ];
 

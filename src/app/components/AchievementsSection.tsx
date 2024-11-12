@@ -10,8 +10,7 @@ const AnimatedNumbers = dynamic(
 );
 let views = new Date().getTime() / 1000;
 views /= 86400; // days
-// views /= 7; // weeks
-views /= 30; // months
+views /= 7; // weeks
 views = Math.floor(views);
 
 const achievementsList = [

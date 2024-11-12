@@ -15,7 +15,7 @@ const skillsData = [
   { name: "Hardhat", level: "Expert" },
   { name: "Smart Contract", level: "Proficient" },
   { name: "Hyperleger Fabric", level: "Intermediate" },
-  { name: "AWS DynamoDB", level: "Intermediate" },
+  { name: "AWS DynamoDB", level: "Proficient" },
   { name: "AWS Lambda", level: "Proficient" },
   { name: "API Gateway", level: "Expert" },
   { name: "Opensearch", level: "Expert" },
