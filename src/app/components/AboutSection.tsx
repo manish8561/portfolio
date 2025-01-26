@@ -71,10 +71,9 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>MCA</li>
-        <li>IGNOU, Jaipur</li>
-        <li>BA</li>
-        <li>Rajasthan University, Jaipur</li>
+        <li>MCA, IGNOU, Jaipur</li>
+        <li>BA, Rajasthan University, Jaipur</li>
+        <li>Diploma in CSE, Govt. RC Khaitan Poly. College, Jaipur</li>
       </ul>
     ),
   },
@@ -104,8 +103,9 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            Earlier working as Sr Backend Engineer in Intellias, Pune and I am
-            used to be a skilled Blockchain | Golang | Full Stack Developer with
+            Currently working as Sr Golang Engineer in LTIMindtree(as
+            contractor) with Spectrum Talent Management, Pune. Earlier I used to
+            be a skilled Blockchain | Golang | Full Stack Developer with
             extensive experience in working with Blockchain fundamentals, smart
             contracts, consensus algorithms, and various Blockchain protocols
             including DeFi, NFT, DEX, DAPPs, Centeralize Exchange and Crypto
