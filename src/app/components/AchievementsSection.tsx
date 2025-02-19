@@ -10,7 +10,7 @@ const AnimatedNumbers = dynamic(
 );
 let views = new Date().getTime() / 1000;
 views /= 86400; // days
-views /= 7; // weeks
+views /= 5; // 5 days
 views = Math.floor(views);
 
 const achievementsList = [
@@ -29,7 +29,7 @@ const achievementsList = [
     value: views.toString(),
   },
   {
-    metric: "Years",
+    metric: "Experience",
     value: "12",
   },
 ];

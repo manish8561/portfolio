@@ -56,7 +56,7 @@ Upgrade your international banking with a UK account from Nomo, brought to you b
   },
   {
     id: 6,
-    title: "Anchor Swap",
+    title: "Anchor `Swap",
     description:
       "Decentralized Exchange and Automatic Liquidity Acquisition Yield Farm running currently on Binance Smart Chain, with a vision to launch on several other blockchains in future. We have created a deflation token, called Anchor.",
     image: "/images/projects/anchor.jpg",

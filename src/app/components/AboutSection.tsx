@@ -36,7 +36,7 @@ const skillsData = [
   { name: "Electron JS", level: "Proficient" },
   { name: "MEAN/MERN Stack", level: "Expert" },
   { name: "MySQL", level: "Expert" },
-  { name: "Postgres", level: "Proficient" },
+  { name: "Postgresql", level: "Proficient" },
   { name: "Sequelize", level: "Proficient" },
   { name: "TypeORM", level: "Proficient" },
   { name: "Socket.io", level: "Proficient" },
@@ -103,9 +103,9 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            Currently working as Sr Golang Engineer in LTIMindtree(as
-            contractor) with Spectrum Talent Management, Pune. Earlier I used to
-            be a skilled Blockchain | Golang | Full Stack Developer with
+            Currently working as Sr Golang Developer in Spectrum Talent
+            Managemen working as contractor with LTIMindtree, Pune. Earlier I
+            used to be a skilled Blockchain | Golang | Full Stack Developer with
             extensive experience in working with Blockchain fundamentals, smart
             contracts, consensus algorithms, and various Blockchain protocols
             including DeFi, NFT, DEX, DAPPs, Centeralize Exchange and Crypto
