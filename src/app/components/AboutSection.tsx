@@ -5,7 +5,9 @@ import TabButton from "./TabButton";
 
 const skillsData = [
   { name: "Golang", level: "Proficient" },
-  { name: "Nest JS", level: "Proficient" },
+  { name: "Gorm", level: "Proficient" },
+  { name: "Postgres", level: "Proficient" },
+  { name: "Gomonkey", level: "Proficient" },
   { name: "Microservices", level: "Proficient" },
   { name: "Serverless", level: "Proficient" },
   { name: "Blockchain", level: "Proficient" },
@@ -36,7 +38,6 @@ const skillsData = [
   { name: "Electron JS", level: "Proficient" },
   { name: "MEAN/MERN Stack", level: "Expert" },
   { name: "MySQL", level: "Expert" },
-  { name: "Postgresql", level: "Proficient" },
   { name: "Sequelize", level: "Proficient" },
   { name: "TypeORM", level: "Proficient" },
   { name: "Socket.io", level: "Proficient" },
