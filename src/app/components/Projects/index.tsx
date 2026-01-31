@@ -7,6 +7,15 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
+    title: "Cisco Smart Licensing Platform",
+    description: `Cisco License Platform is the new and intuitive platform to simplify the management of licenses, devices, services, and subscriptions from the client side.`,
+    image: "/images/projects/cisco.jpg",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "https://software.cisco.com/",
+  },
+  {
+    id: 2,
     title: "Nomo Bank Wallet App",
     description: `Beyond an International Digital Bank
 Upgrade your international banking with a UK account from Nomo, brought to you by Boubyan Bank.`,
@@ -16,7 +25,7 @@ Upgrade your international banking with a UK account from Nomo, brought to you b
     previewUrl: "https://www.nomobank.com/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Kudi Pro",
     description: `Every newly signed-up Kudi Pro user will be assigned a unique account  through which naira deposits can be made for the purpose of acquiring crypto assets and withdraw naira fiat through their unique account(s).`,
     image: "/images/projects/kudi.jpg",
@@ -25,7 +34,7 @@ Upgrade your international banking with a UK account from Nomo, brought to you b
     previewUrl: "https://kudi.pro/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Ubuy",
     description:
       "For over a decade, Ubuy as a leading retail search engine platform has been serving customers in over 180+ countries around the globe.",
@@ -35,7 +44,7 @@ Upgrade your international banking with a UK account from Nomo, brought to you b
     previewUrl: "https://ubuy.com/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Ancrypto Crypto Wallet App",
     description:
       "The multichain wallet of the future, offering a single username for all your blockchain public addresses within a non-custodial Web3 wallet, secured by your device. Experience seamless, intermediary-free transactions, all powered by your Universal Multichain identity.",
@@ -45,7 +54,7 @@ Upgrade your international banking with a UK account from Nomo, brought to you b
     previewUrl: "/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Planet Inverse",
     description:
       "The Planet Inverse GameFi economy is built on a foundation of three interoperable platforms utilizing the XIV token..",
@@ -55,7 +64,7 @@ Upgrade your international banking with a UK account from Nomo, brought to you b
     previewUrl: "https://planetinverse.com/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Anchor `Swap",
     description:
       "Decentralized Exchange and Automatic Liquidity Acquisition Yield Farm running currently on Binance Smart Chain, with a vision to launch on several other blockchains in future. We have created a deflation token, called Anchor.",
@@ -65,7 +74,7 @@ Upgrade your international banking with a UK account from Nomo, brought to you b
     previewUrl: "https://anchorswap.app/",
   },
   {
-    id: 7,
+    id: 8,
     title: "eTicketSolutions",
     description:
       "eTicket Solutions is your one stop shop for all ticketing related. Designed by entrepreneurs with a passion for theatre and the arts, we know how important it is to take time out of your busy schedule to unwind and enjoy life and that’s why we are dedicated to providing you with all of the latest entertainment, travel, and transportation information - from movie releases, to details of the latest happenings in your area and how to get there!",
@@ -75,7 +84,7 @@ Upgrade your international banking with a UK account from Nomo, brought to you b
     previewUrl: "https://eticketsolutions.com/",
   },
   {
-    id: 8,
+    id: 9,
     title: "K R Consultancy",
     description: `Vitalia is clean and modern ecommerce theme. Unlimited colors and font. Seo ready. Resposive design and more...
     Log to demo admin panel and check all settings and functions. With custom footer you can add some nice info in footer like contact or twitter & facebook.`,
@@ -85,7 +94,7 @@ Upgrade your international banking with a UK account from Nomo, brought to you b
     previewUrl: "http://www.krconsultancy.in/",
   },
   {
-    id: 9,
+    id: 10,
     title: "Harpreet Fashion",
     description: `Discover the latest trends at our fashion store, where style meets sophistication. From timeless classics to contemporary designs, we offer a curated selection for men, women, and kids. Our collection includes everything from chic casual wear to elegant formal attire, crafted with high-quality fabrics and designed to elevate your wardrobe.`,
     image: "/images/projects/5.png",
@@ -105,7 +114,7 @@ const ProjectsSection = () => {
   };
 
   const filteredProjects = projectsData.filter((project) =>
-    project.tag.includes(tag)
+    project.tag.includes(tag),
   );
 
   const cardVariants = {
