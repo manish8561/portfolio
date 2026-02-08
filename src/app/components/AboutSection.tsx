@@ -104,18 +104,39 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            Currently working as Sr Golang Developer in Spectrum Talent
-            Managemen working as contractor with LTIMindtree, Pune. Earlier I
-            used to be a skilled Blockchain | Golang | Full Stack Developer with
-            extensive experience in working with Blockchain fundamentals, smart
-            contracts, consensus algorithms, and various Blockchain protocols
-            including DeFi, NFT, DEX, DAPPs, Centeralize Exchange and Crypto
-            Wallet. My expertise includes Golang, AWS Lambda, API Gateway,
-            Dynamodb, Serverless, ElastiCache, S3, EC2, Cognito, SES, SNS,
-            Localstack, Nest JS, Tronweb/Web3 JS, Solidity, ERC20, ERC721,
-            ERC1155, Eth, BNB, TRX, RabbitMQ, Redis, Docker, Electron JS,
-            Angular 10, Node JS, Typescript with Express JS, Socket.io, LAMP,
-            Heroku, and MongoDB, MySQL, React JS, Firebase, and Firestore.
+            I am currently working as a Senior Golang Developer at Spectrum
+            Talent Management, engaged as a contractor with LTIMindtree in Pune,
+            where I contribute to building and maintaining scalable, reliable
+            backend systems.
+          </p>
+          <p className="text-base lg:text-lg">
+            Previously, I worked as a Blockchain, Golang, and Full-Stack
+            Developer, with extensive hands-on experience in blockchain
+            fundamentals, smart contracts, consensus mechanisms, and
+            decentralized architectures. I have been involved in developing
+            solutions across DeFi platforms, NFTs, DEXs, DApps, centralized
+            exchanges, and crypto wallet systems, gaining strong domain
+            expertise in the blockchain and fintech space.
+          </p>
+          <p className="text-base lg:text-lg">
+            My technical expertise includes Golang and cloud-native development
+            on AWS, using services such as Lambda, API Gateway, DynamoDB, S3,
+            EC2, ElastiCache, Cognito, SNS, and SES, along with serverless
+            architectures and LocalStack for development and testing. I have
+            strong experience with Redis, RabbitMQ, Docker, and modern backend
+            frameworks including Node.js, NestJS, TypeScript, and Express.js.
+          </p>
+          <p className="text-base lg:text-lg">
+            I have also worked with Ethereum, BNB Chain, and TRON, using
+            Solidity (ERC-20, ERC-721, ERC-1155) and Web3.js/TronWeb for
+            blockchain integrations. Additionally, I possess full-stack exposure
+            with React.js, Angular, Electron.js, and databases such as MongoDB,
+            MySQL, Firebase, and Firestore.
+          </p>
+          <p className="text-base lg:text-lg">
+            Overall, I specialize in designing scalable backend architectures,
+            integrating distributed systems, and building production-grade
+            platforms for enterprise and fintech use cases.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -157,10 +178,10 @@ const AboutSection = () => {
                     skill?.level === "Expert"
                       ? "bg-green-500 text-white"
                       : skill.level === "Proficient"
-                      ? "bg-blue-500 text-white"
-                      : skill.level === "Intermediate"
-                      ? "bg-yellow-500 text-white"
-                      : "bg-red-500 text-white"
+                        ? "bg-blue-500 text-white"
+                        : skill.level === "Intermediate"
+                          ? "bg-yellow-500 text-white"
+                          : "bg-red-500 text-white"
                   }`}
                 >
                   {skill?.level}
