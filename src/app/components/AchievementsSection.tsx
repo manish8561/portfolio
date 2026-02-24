@@ -1,13 +1,6 @@
 "use client";
 import React from "react";
-import dynamic from "next/dynamic";
-
-const AnimatedNumbers = dynamic(
-  () => {
-    return import("react-animated-numbers");
-  },
-  { ssr: false }
-);
+import CountUp from "react-countup";
 let views = new Date().getTime() / 1000;
 views /= 86400; // days
 views /= 4; // 4 days
@@ -47,10 +40,9 @@ const AchievementsSection = () => {
             >
               <h2 className="text-white text-4xl font-bold flex flex-row">
                 {achievement.prefix}
-                <AnimatedNumbers
-                  includeComma
-                  animateToNumber={parseInt(achievement.value)}
-                  locale="en-US"
+                <CountUp
+                  end={parseInt(achievement.value)}
+                  separator=","
                   className="text-white text-4xl font-bold"
                 />
                 {achievement.postfix}
