@@ -105,7 +105,7 @@ const AboutSection = () => {
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
             I am currently working as a Senior Golang Developer at Spectrum
-            Talent Management, engaged as a contractor with LTIMindtree in Pune,
+            Talent Management, engaged as a contractor with LTM in Pune,
             where I contribute to building and maintaining scalable, reliable
             backend systems.
           </p>
