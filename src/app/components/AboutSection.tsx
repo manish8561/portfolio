@@ -104,13 +104,12 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am currently working as a Sr Golang Developer at Spectrum
-            Talent Management, engaged as a contractor with LTM in Pune,
+            I am currently working as a Senior Consultant at T-Systems in Pune,
             where I contribute to building and maintaining scalable, reliable
-            backend systems for Cisco Projects.
+            backend systems for T-Systems Cloud Projects.
           </p>
           <p className="text-base lg:text-lg">
-            Previously, I worked as a Blockchain, Golang, and Full-Stack
+            Previously, I worked as a Golang, Blockchain and Full-Stack
             Developer, with extensive hands-on experience in blockchain
             fundamentals, smart contracts, consensus mechanisms, and
             decentralized architectures. I have been involved in developing

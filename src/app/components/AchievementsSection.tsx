@@ -3,7 +3,7 @@ import React from "react";
 import CountUp from "react-countup";
 let views = new Date().getTime() / 1000;
 views /= 86400; // days
-views /= 4; // 4 days
+views /= 6; // 5 days
 views = Math.floor(views);
 
 const achievementsList = [
@@ -14,8 +14,8 @@ const achievementsList = [
   },
   {
     prefix: "~",
-    metric: "Users",
-    value: "100,000",
+    metric: "Git Repos",
+    value: "89",
   },
   {
     metric: "Views",
@@ -23,7 +23,7 @@ const achievementsList = [
   },
   {
     metric: "Years",
-    value: "11",
+    value: "12",
     postfix: "+",
   },
 ];
