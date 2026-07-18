@@ -9,6 +9,7 @@ const skillsData = [
   { name: "Postgres", level: "Proficient" },
   { name: "Gomonkey", level: "Proficient" },
   { name: "Microservices", level: "Proficient" },
+  { name: "Jenkins", level: "Intermediate" },
   { name: "Serverless", level: "Proficient" },
   { name: "Blockchain", level: "Proficient" },
   { name: "Ethereum", level: "Proficient" },
