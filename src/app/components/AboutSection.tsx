@@ -28,7 +28,7 @@ const skillsData = [
   { name: "Smart Contract", level: "Proficient" },
   { name: "AWS DynamoDB", level: "Proficient" },
   { name: "AWS Lambda", level: "Proficient" },
-  { name: "API Gateway", level: "Expert" },
+  { name: "AWS API Gateway", level: "Expert" },
   { name: "AWS Opensearch", level: "Expert" },
   { name: "AWS RDS", level: "Proficient" },
   { name: "AWS S3", level: "Proficient" },
@@ -107,6 +107,18 @@ const AboutSection = () => {
             I am currently working as a Senior Consultant at T-Systems in Pune,
             where I contribute to building and maintaining scalable, reliable
             backend systems for T-Systems Cloud Projects.
+          </p>
+          <p className="text-base lg:text-lg">
+            Previously, I worked as a Golang Developer in the Sepectrum Talent Management, where I was a Contractor in LTM and working on CISCO smart licencing project. I was responsible for developing and maintaining backend services, implementing APIs, and ensuring the overall performance and scalability of the system.
+          </p>
+          <p className="text-base lg:text-lg">
+            I have also worked as a Golang, Blockchain and Full-Stack
+            Developer, with extensive hands-on experience in blockchain
+            fundamentals, smart contracts, consensus mechanisms, and
+            decentralized architectures. I have been involved in developing
+            solutions across DeFi platforms, NFTs, DEXs, DApps, centralized
+            exchanges, and crypto wallet systems, gaining strong domain
+            expertise in the blockchain and fintech space.
           </p>
           <p className="text-base lg:text-lg">
             Previously, I worked as a Golang, Blockchain and Full-Stack
